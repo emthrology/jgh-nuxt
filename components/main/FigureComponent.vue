@@ -1,12 +1,10 @@
 <template>
   <div class>
     <div class="z-1 relative flex flex-col items-center min-h-[50vh]">
-      <img
-        class="z-10"
-        src="/images/figure_01.png"
-        alt="Logo"
-      />
-      <div class="z-0 absolute top-[18px] md:top-[20px] transform translate-x-[-0%]">
+      <img class="z-10" src="/images/figure_01.png" alt="Logo" />
+      <div
+        class="z-0 absolute top-[18px] md:top-[20px] transform translate-x-[-0%]"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="500"
@@ -20,29 +18,28 @@
           />
         </svg>
       </div>
-      <div class=" flex flex-col items-center justify-center">
-      <div class="text-[36px] font-bold font text-center text-[#AA1212] font-BookkMuyngjo">
-        {{t('main_title_01')}}
+      <div class="flex flex-col items-center justify-center">
+        <div
+          class="text-[36px] font-bold font text-center text-[#AA1212] font-BookkMuyngjo"
+        >
+          {{ t('main_title_01') }}
+        </div>
+        <div
+          class="text-[28px] font-bold text-center text-black font-BookkMuyngjo"
+        >
+          {{ t('main_title_02') }}
+        </div>
+        <div class="text-lg font-thin mt-4 text-zinc-500 text-center">
+          {{ t('sub_title_01') }}
+        </div>
       </div>
-      <div class="text-[28px] font-bold text-center text-black font-BookkMuyngjo">
-        {{t('main_title_02')}}
-      </div>
-      <div class="text-lg font-thin mt-4 text-zinc-500 text-center">
-        {{ t('sub_title_01') }}
-      </div>
-    </div>
     </div>
     <!-- <div>{{ t('jgh') }}</div> -->
-
-
   </div>
-
 </template>
 
 <script setup>
-  const { t, locale } = useI18n();
+const { t, locale } = useI18n();
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

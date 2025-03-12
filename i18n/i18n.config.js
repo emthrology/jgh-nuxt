@@ -10,13 +10,14 @@ export default defineI18nConfig(() => ({
       German: '독일어',
       welcome: '환영합니다',
       schedule: '일정',
-      photo:'사진',
+      photo: '사진',
       introduction: '소개',
       qna: 'Q&A',
       main_title_01: '예수한국 복음통일',
       main_title_02: '내 민족을 내게 주소서',
       sub_title_01: '복음으로 통일을 이루고 예루살렘을 향하여',
 
+      menutitle_00: '오해와 진실',
       menutitle_01: '카드뉴스',
       menutitle_02: '최근 활동 사진',
       menutitle_03: '책',
@@ -34,17 +35,18 @@ export default defineI18nConfig(() => ({
       German: 'German',
       welcome: 'Welcome',
       schedule: 'Schedule',
-      photo:'Photo',
+      photo: 'Photo',
       introduction: 'Introduction',
       qna: 'Q&A',
       main_title_01: 'Jesus Korean Gospel Unification',
       main_title_02: 'Give me my people',
       sub_title_01: 'Unify with the gospel and head to Jerusalem',
 
+      menutitle_00: 'Misunderstandings and Truths',
       menutitle_01: 'Card News',
-      menutitle_02: 'Recent Activity',
+      menutitle_02: 'Recent Activities',
       menutitle_03: 'Books',
-      menutitle_04: 'Press Release',
+      menutitle_04: 'Press Releases',
 
       see_more: 'See more',
       see_less: 'See less',
@@ -61,11 +63,12 @@ export default defineI18nConfig(() => ({
       photo: '照片',
       introduction: '介绍',
       qna: '问答',
-      main_title_01: '卡新闻',
+      main_title_01: '耶稣韩国福音统一',
       main_title_02: '将我的民族给我',
       sub_title_01: '通过福音实现统一并前往耶路撒撒冷',
 
-      menutitle_01: '误解与真相',
+      menutitle_00: '误解与真相',
+      menutitle_01: '卡新闻',
       menutitle_02: '最近的活动照片',
       menutitle_03: '书',
       menutitle_04: '新闻稿',
@@ -89,15 +92,16 @@ export default defineI18nConfig(() => ({
       main_title_02: 'Donne-moi mon peuple',
       sub_title_01: 'Unifier avec l’évangile et se diriger vers Jérusalem',
 
-      menutitle_01: 'Le Actualités des cartes',
-      menutitle_02: 'La Photos d’activité récente',
+      menutitle_00: 'Le malentendu et la vérité',
+      menutitle_01: 'Les Actualités des cartes',
+      menutitle_02: 'Les Photos d’activité récente',
       menutitle_03: 'Livres',
       menutitle_04: 'Communiqué de presse',
 
       see_more: 'Voir plus',
       see_less: 'Voir moins',
       see_all: 'Voir tout',
-      
+
     },
     de: {
       Korean: 'Koreanisch',
@@ -114,8 +118,9 @@ export default defineI18nConfig(() => ({
       main_title_02: 'Gib mir mein Volk',
       sub_title_01: 'Mit dem Evangelium vereinen und nach Jerusalem gehen',
 
+      menutitle_00: 'Das Missverständnis und die Wahrheit',
       menutitle_01: 'Kartennachrichten',
-      menutitle_02: 'Aktuelle Aktiv',
+      menutitle_02: 'Aktuelle Aktivitäten',
       menutitle_03: 'Bücher',
       menutitle_04: 'Pressemitteilung',
 

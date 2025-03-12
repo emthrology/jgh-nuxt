@@ -1,20 +1,26 @@
 <template>
     <!-- <div class="z-1000 w-full max-w-[500px] h-[60px] fixed  bg-white text-black flex justify-between items-center px-4"> -->
-    <div class="header">
-      <button v-if="isMainRoute" @click="toggleLeftMenu">
-        <img src="/images/menubuton.png" alt="">
-      </button>
-      <button v-else @click="back">
-        <img src="/images/chevron-left.png" alt="">
-      </button>
-      <nuxt-link to="/main" @click="closeMenu">
-      <img src="/images/jgh.png" alt="Logo" />
-      </nuxt-link>
-      <!-- <button>오른쪽</button> -->
-      <button @click="toggleMenu" class="">
-        <!-- 🌐 -->
-        <img src="/images/world_2_light_1.png" alt="">
-      </button>
+    <div class="header-container">
+      <div class="red-tape">
+        <span class="catchphrase">Jesus Korea, Gospel Unification</span>
+      </div>
+      <div class="header">
+        <button v-if="isMainRoute" @click="toggleLeftMenu" class="">
+          <!-- 🌐 -->
+          <img src="/images/world_2_light_1.png" alt="">
+        </button>
+        <button v-else @click="back">
+          <img src="/images/chevron-left.png" alt="">
+        </button>
+        <nuxt-link to="/main" @click="closeMenu">
+        <img src="/images/jgh.png" alt="Logo" />
+        </nuxt-link>
+        <!-- <button>오른쪽</button> -->
+        <button @click="toggleRightMenu">
+          <img src="/images/menubuton.png" alt="">
+        </button>
+      </div>
+
 
     </div>
     <!-- 언어 선택 메뉴 -->
@@ -22,7 +28,7 @@
       <div
         v-if="showLanguageMenu"
         class="language-menu"
-        @click.self="toggleMenu"
+        @click.self="toggleLeftMenu"
       >
         <ul>
           <li v-for="lang in languages" :key="lang.code" @click="changeLanguage(lang.code)">
@@ -36,7 +42,7 @@
       <div
         v-if="showLeftMenu"
         class="left-menu"
-        @click.self="toggleLeftMenu"
+        @click.self="toggleRightMenu"
       >
         <img src="/images/jgh.png" alt="Logo" @click="closeMenu" />
         <img src="/images/close.png" alt="close" @click="closeMenu" class="absolute top-10 right-12"/>
@@ -84,11 +90,11 @@ const showLanguageMenu = ref(false)
 const showLeftMenu = ref(false)
 
 // 메뉴 토글 함수
-const toggleMenu = () => {
+const toggleLeftMenu = () => {
   showLanguageMenu.value = !showLanguageMenu.value
 }
 
-const toggleLeftMenu = () => {
+const toggleRightMenu = () => {
   showLeftMenu.value = !showLeftMenu.value
 }
 const closeMenu = () => {
@@ -112,17 +118,36 @@ const back = () => {
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
 /* 헤더 스타일 */
-.header {
+.header-container {
   z-index: 1000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.1px solid black; 
+}
+.header-container .red-tape {
+  height: 25px;
+  background-color: #9C0B0E;
+  display: flex;
+  justify-content: center;
+  padding: 1% 0;
+}
+.red-tape .catchphrase {
+  color: white;
+  font-size: 12px;
+}
+.header-container .header {
+
   width: 100vw;
   max-width: 500px;
   height: 60px;
-  position: fixed;
+
   background-color: white;
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   padding: 0 1rem;
 }
 
@@ -137,8 +162,8 @@ const back = () => {
 .language-menu {
   position: fixed;
   display: flex;
-  top: 60px; /* 헤더 아래 */
-  right: calc(50% - 245px); /* 가운데 정렬 */
+  top: 90px; /* 헤더 아래 */
+  left: calc(50% - 245px); /* 가운데 정렬 */
   z-index: 900;
 
   background-color: white;
@@ -147,7 +172,7 @@ const back = () => {
 }
 @media (max-width: 860px) {
   .language-menu {
-    right: 10px;
+    left: 10px;
   }
 }
 

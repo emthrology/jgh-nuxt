@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen space-y-4">
+  <div class="space-y-4">
     <div
       v-for="(item, index) in items"
       :key="index"
@@ -8,13 +8,15 @@
       <!-- 아코디언 헤더 -->
       <button
         @click="toggleAccordion(index)"
-        class="flex justify-between items-center w-full text-left text-lg font-semibold "
+        class="flex justify-between items-center px-4 w-full text-left text-lg font-semibold"
       >
-        <div><span class="text-[#AA1212]">Q </span><span> {{ item.title }}</span></div>
+        <div>
+          <span class="text-[#AA1212]">Q </span><span> {{ item.title }}</span>
+        </div>
         <span
           :class="{
             'rotate-180': activeIndex === index,
-            'rotate-0': activeIndex !== index
+            'rotate-0': activeIndex !== index,
           }"
           class="transition-transform duration-300"
         >
@@ -27,10 +29,11 @@
       <!-- 아코디언 내용 -->
       <div
         v-show="activeIndex === index"
-        class="mt-4 py-4 px-8 bg-zinc-200 text-gray-700 transition-all duration-300 ease-in-out flex flex-col items-center"
+        class="mt-4 mx-4 py-4 px-8 bg-zinc-100 text-gray-700 transition-all duration-300 ease-in-out flex flex-col items-center"
       >
-        <p>{{ item.content }}</p>
+        <p v-html="item.answer"></p>
         <button
+          @click="handleClick(item.id)"
           class="mt-4 inline-flex items-center px-4 py-2 border border-red-600 text-red-600 rounded-2xl hover:bg-red-600 hover:text-white transition duration-300"
         >
           자세히보기
@@ -42,19 +45,26 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 const props = defineProps({
-  items: Array
-})
+  items: Array,
+});
 
 // 활성화된 아코디언 인덱스 관리
-const activeIndex = ref(null)
+const activeIndex = ref(null);
 
 // 아코디언 토글 함수
 const toggleAccordion = (index) => {
-  activeIndex.value = activeIndex.value === index ? null : index
-}
+  activeIndex.value = activeIndex.value === index ? null : index;
+};
+
+const emit = defineEmits(['clickDetail']);
+const handleClick = (id) => {
+  emit('clickDetail', {
+    id,
+  });
+};
 </script>
 
 <style scoped>

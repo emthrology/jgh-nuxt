@@ -2,8 +2,16 @@
   <h1 class="p-4 text-2xl font-bold">{{ props.title }}</h1>
   <div class="flex flex-col justify-around items-center">
     <div class="flex flex-wrap p-4">
-      <div v-for="(group, groupIndex) in groupedImages" :key="groupIndex" class="w-full flex">
-        <div v-for="(image, itemIndex) in group" :key="image.id" :class="getImageWidth(itemIndex + groupIndex)">
+      <div
+        v-for="(group, groupIndex) in groupedImages"
+        :key="groupIndex"
+        class="w-full flex"
+      >
+        <div
+          v-for="(image, itemIndex) in group"
+          :key="image.id"
+          :class="getImageWidth(itemIndex + groupIndex)"
+        >
           <img
             :key="index"
             :src="image.img"
@@ -16,35 +24,36 @@
     </div>
     <slot />
   </div>
-</template>s
+</template>
+s
 
 <script setup>
-  const props = defineProps({
-    title: String,
-    images: {
-      type: Array,
-      required: true,
-    },
-  });
-  const groupedImages = computed(() => {
-    return props.images.reduce((result, item, index) => {
-      const groupIndex = Math.floor(index / 2)
-      if (!result[groupIndex]) {
-        result[groupIndex] = []
-      }
-      result[groupIndex].push(item)
-      return result
-    }, [])
-  })
-  const getImageWidth = (index) => {
-    return index % 2 === 0 ? 'w-[33.3% - 1px] ' : 'w-[66.6% - 1px] flex-1';
-  };
+const props = defineProps({
+  title: String,
+  images: {
+    type: Array,
+    required: true,
+  },
+});
+const groupedImages = computed(() => {
+  return props.images.reduce((result, item, index) => {
+    const groupIndex = Math.floor(index / 2);
+    if (!result[groupIndex]) {
+      result[groupIndex] = [];
+    }
+    result[groupIndex].push(item);
+    return result;
+  }, []);
+});
+const getImageWidth = (index) => {
+  return index % 2 === 0 ? 'flex-[2] basis-[33%]' : 'flex-[1] basis-[66%]';
+};
 
-  const emit = defineEmits(['imgClick'])
-  // 날짜 클릭 이벤트 처리
-  const imgClick = (image) => {
-    emit('imgClick', image.id);
-  }
+const emit = defineEmits(['imgClick']);
+// 날짜 클릭 이벤트 처리
+const imgClick = (image) => {
+  emit('imgClick', image.id);
+};
 </script>
 
 <style scoped>
@@ -58,7 +67,7 @@
   padding: 0 4px;
   width: 100%;
   height: 100px; /* 비율 유지 */
-  margin: 3px; 
+  margin: 3px;
   border-radius: 8px; /* 둥근 모서리 */
   object-fit: cover; /* 이미지 크기 조정 */
 }
