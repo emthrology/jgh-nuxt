@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'BookkMuyngjo';
+  font-weight: 400;
+  fint-style: normal;
+  src: url('/fonts/BookkMyungjoOTF_Light.otf').format('otf')
+}
+
+@font-face {
+  font-family: 'BookkMuyngjo';
+  font-weight: 700;
+  fint-style: bold;
+  src: url('~/public/fonts/BookkMyungjoOTF_Bold.otf').format('otf')
+}
