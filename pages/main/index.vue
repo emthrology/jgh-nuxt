@@ -10,7 +10,7 @@
         />
       </div>
     </div> -->
-    <MainQnaComponent :title="`${t('menutitle_00')}`" :list="qnaList">
+    <MainQnaComponent :title="t('menutitle_00')" :list="qnaList">
       <Button
         class="w-[50%]"
         round="3xl"
@@ -26,7 +26,7 @@
     <div class="border border-b-0 border-x-0 mt-8">
       <SidedSwiper
         @slideClick="handleNewsClick"
-        :title="`${t('menutitle_01')}`"
+        :title="t('menutitle_01')"
         :list="card"
         :slides-per-view="1.4"
         :slideHeight="'h-[300px]'"
@@ -49,7 +49,7 @@
     <div class="border border-b-0 border-x-0 mt-8 bg-zinc-100">
       <SidedSwiper
         @slideClick="handleBookClick"
-        :title="`${t('menutitle_03')}`"
+        :title="t('menutitle_03')"
         :list="book"
         :slides-per-view="2.2"
         :slideHeight="'h-[250px]'"
