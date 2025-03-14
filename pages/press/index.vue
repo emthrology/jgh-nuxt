@@ -4,7 +4,7 @@
     <!-- <h1 class="mt-8 mb-4 text-2xl font-bold">보도 자료</h1> -->
     <ContentsList title="보도 자료" :list="responseData.data">
       <template #item="{ item, index }">
-        <NewsContent :content="item" />
+        <NewsContent :content="item" :show-thumbnail="false" />
       </template>
       <Button
         class="w-[90%]"
