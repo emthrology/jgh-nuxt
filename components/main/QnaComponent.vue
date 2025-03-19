@@ -12,12 +12,12 @@
           class="border border-solid rounded-2xl shadow-md h-[160px] flex flex-col justify-center items-start my-4 p-5"
         >
           <div class="flex flex-col items-start">
-            <p class="text-red-700 text-[22px] font-BookkMuyngjo">
+            <p class="text-red-700 text-[22px] font-bold font-BookkMyungjo">
               {{ slide.title }}
             </p>
             <p
               v-html="slide.answer"
-              class="pt-4 text-[16px] text-zinc-500 font-BookkMuyngjo"
+              class="pt-4 text-[16px] text-zinc-500 font-BookkMyungjo"
             ></p>
           </div>
         </div>

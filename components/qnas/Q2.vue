@@ -1,31 +1,31 @@
 <template>
   <div>
     <div class="relative p-4 min-h-[320px]">
-      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMuyngjo">
+      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMyungjo">
         Q&A
       </h1>
-      <h1 class="z-50 relative text-3xl font-BookkMuyngjo">극우집단</h1>
+      <h1 class="z-50 relative text-3xl font-BookkMyungjo">극우집단</h1>
       <div class="z-10 absolute top-[65px] w-full image">
         <img src="/images/qnas/qna_02.png" alt="Image" />
       </div>
       <div
-        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMyungjo"
       >
         Q
       </div>
       <div
-        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMyungjo"
       >
         A
       </div>
     </div>
     <div class="min-h-[500px] mt-8 p-4">
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         오해 : 광화문 집회 참여자들은 극단적인 우익 세력이자 폭력적인 성향을
         띤다.
       </p>
       <br />
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         진실 : ‘극우’라는 개념은 일반적으로 폭력을 동반하는 극단적 세력을
         의미합니다.
         <span class="font-bold">

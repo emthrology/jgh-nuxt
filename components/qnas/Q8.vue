@@ -1,30 +1,30 @@
 <template>
   <div>
     <div class="relative p-4 min-h-[320px]">
-      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMuyngjo">
+      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMyungjo">
         Q&A
       </h1>
-      <h1 class="z-50 relative text-3xl font-BookkMuyngjo">선지자?</h1>
+      <h1 class="z-50 relative text-3xl font-BookkMyungjo">선지자?</h1>
       <div class="z-10 absolute top-[65px] w-full image">
         <img src="/images/qnas/qna_02.png" alt="Image" />
       </div>
       <div
-        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMyungjo"
       >
         Q
       </div>
       <div
-        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMyungjo"
       >
         A
       </div>
     </div>
     <div class="min-h-[500px] mt-8 p-4">
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         오해 : 자신을 선지자라고 칭하며 신격화하려 한다.
       </p>
       <br />
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         진실 : ‘선지자’라는 표현은 성경적 의미에서 하나님의 뜻을 대언하는 사명을
         강조한 것입니다.<br />
         성경에서 선지자는 하나님의 말씀을 전하며 시대를 깨우는 역할을 맡았으며,

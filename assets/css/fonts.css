@@ -1,13 +1,19 @@
 @font-face {
-  font-family: 'BookkMuyngjo';
+  font-family: 'BookkMyungjo';
   font-weight: 400;
   fint-style: normal;
-  src: url('/fonts/BookkMyungjoOTF_Light.otf').format('otf')
+  src: url('/fonts/BookkMyungjoOTF_Light.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'BookkMuyngjo';
+  font-family: 'BookkMyungjo';
   font-weight: 700;
   fint-style: bold;
-  src: url('~/public/fonts/BookkMyungjoOTF_Bold.otf').format('otf')
+  src: url('/fonts/BookkMyungjoOTF_Bold.otf') format('opentype');
 }
+/* @font-face {
+  font-family: 'BookkMyungjo';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2')
+    format('woff2');
+  font-weight: bold;
+} */

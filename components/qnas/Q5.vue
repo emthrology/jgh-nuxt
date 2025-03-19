@@ -1,30 +1,30 @@
 <template>
   <div>
     <div class="relative p-4 min-h-[320px]">
-      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMuyngjo">
+      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMyungjo">
         Q&A
       </h1>
-      <h1 class="z-50 relative text-3xl font-BookkMuyngjo">발언 논란</h1>
+      <h1 class="z-50 relative text-3xl font-BookkMyungjo">발언 논란</h1>
       <div class="z-10 absolute top-[65px] w-full image">
         <img src="/images/qnas/qna_01.png" alt="Image" />
       </div>
       <div
-        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMyungjo"
       >
         Q
       </div>
       <div
-        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMyungjo"
       >
         A
       </div>
     </div>
     <div class="min-h-[500px] mt-8 p-4">
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         오해 : 전광훈 목사는 막말과 비속어를 사용한다.
       </p>
       <br />
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         진실 : 전광훈 목사는 1989년부터 부흥사로 활동하며 대중과 소통하는 연설
         방식에 익숙합니다. <br />정제된 언어보다 직설적인 표현을 사용하기
         때문에, 일부 발언이 의도와 다르게 왜곡·과장될 수 있습니다. <br />특정

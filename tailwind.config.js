@@ -7,9 +7,10 @@ module.exports = {
     "./nuxt.config.{js,ts}"
   ],
   theme: {
-    extend: {},
-    fontFamily: {
-      BookkMuyngjo: ['BookkMuyngjo']
+    extend: {
+      fontFamily: {
+        BookkMyungjo: ["BookkMyungjo", ...require("tailwindcss/defaultTheme").fontFamily.sans],
+      },
     },
     screens: {
       xs: '384px',

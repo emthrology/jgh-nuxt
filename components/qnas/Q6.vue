@@ -1,32 +1,32 @@
 <template>
   <div>
     <div class="relative p-4 min-h-[320px]">
-      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMuyngjo">
+      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMyungjo">
         Q&A
       </h1>
-      <h1 class="z-50 relative text-3xl font-BookkMuyngjo">
+      <h1 class="z-50 relative text-3xl font-BookkMyungjo">
         목사가 왜 욕을 해?
       </h1>
       <div class="z-10 absolute top-[65px] w-full image">
         <img src="/images/qnas/qna_02.png" alt="Image" />
       </div>
       <div
-        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMyungjo"
       >
         Q
       </div>
       <div
-        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMyungjo"
       >
         A
       </div>
     </div>
     <div class="min-h-[500px] mt-8 p-4">
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         오해 : 전광훈 목사는 목회자로서 부적절한 언행을 한다.
       </p>
       <br />
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         진실 : 전광훈 목사의 발언은 단순한 막말이 아니라, 신앙과 국가를 지키기
         위한 강한 메시지입니다.<br />
         예수님도 불의한 지도자들을 향해 “독사의 자식들아!”(마 23:33)라 꾸짖고,

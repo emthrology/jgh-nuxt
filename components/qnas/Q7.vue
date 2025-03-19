@@ -1,32 +1,32 @@
 <template>
   <div>
     <div class="relative p-4 min-h-[320px]">
-      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMuyngjo">
+      <h1 class="z-50 relative text-2xl text-[#AA1212] font-BookkMyungjo">
         Q&A
       </h1>
-      <h1 class="z-50 relative text-3xl font-BookkMuyngjo">
+      <h1 class="z-50 relative text-3xl font-BookkMyungjo">
         광화문에서 성조기는 왜 드는지?
       </h1>
       <div class="z-10 absolute top-[65px] w-full image">
         <img src="/images/qnas/qna_01.png" alt="Image" />
       </div>
       <div
-        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute top-[-5%] left-[-25px] opacity-25 leading-none text-red-200 text-[192px] font-bold font-BookkMyungjo"
       >
         Q
       </div>
       <div
-        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMuyngjo"
+        class="z-10 absolute bottom-[-15%] right-[-30px] opacity-25 leading-none text-gray-300 text-[192px] font-bold font-BookkMyungjo"
       >
         A
       </div>
     </div>
     <div class="min-h-[500px] mt-8 p-4">
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         오해 : 성조기를 드는 것은 반국가적이며, 미국 추종 행위다.
       </p>
       <br />
-      <p class="z-50 relative text-xl font-BookkMuyngjo">
+      <p class="z-50 relative text-xl font-BookkMyungjo">
         진실 : 성조기를 드는 것은 단순한 친미 행위가 아니라,
         <span class="font-bold">
           대한민국의 자유민주주의와 한미동맹을 지키기 위한 상징입니다.

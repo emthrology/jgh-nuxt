@@ -11,7 +11,7 @@
       >
         <div class="flex flex-col">
           <span
-            class="text-[36px] font-bold font text-center text-white font-BookkMuyngjo"
+            class="text-[36px] font-bold font text-center text-white font-BookkMyungjo"
             >{{ t('main_title_01') }}</span
           >
           <div

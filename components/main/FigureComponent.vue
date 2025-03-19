@@ -20,12 +20,12 @@
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          class="text-[36px] font-bold font text-center text-[#AA1212] font-BookkMuyngjo"
+          class="text-[36px] font-bold font text-center text-[#AA1212] font-BookkMyungjo"
         >
           {{ t('main_title_01') }}
         </div>
         <div
-          class="text-[28px] font-bold text-center text-black font-BookkMuyngjo"
+          class="text-[28px] font-bold text-center text-black font-BookkMyungjo"
         >
           {{ t('main_title_02') }}
         </div>

@@ -3,9 +3,11 @@
     <NavComponent current-menu="오해와 진실" />
     <div class="p-8 flex">
       <div class="flex flex-col">
-        <div class="pl-1 text-[36px] font text-left font-BookkMuyngjo">Q&A</div>
+        <div class="pl-1 text-[36px] font-serif text-left font-BookkMyungjo">
+          Q&A
+        </div>
         <div
-          class="text-[36px] font-bold font text-center text-[#AA1212] font-BookkMuyngjo"
+          class="text-[36px] font-bold text-center text-[#AA1212] font-BookkMyungjo"
         >
           오해에 가려진 진실
         </div>
